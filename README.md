@@ -22,8 +22,6 @@ In order to
 
 **Docker Desktop** [Go to link to download relevant Docker Desktop for your specific OS system]  - https://www.docker.com/products/docker-desktop/
 
- https://eu-north-1.signin.aws.amazon.com/oauth?response_type=code&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fca-oauth-flow-id%3D179e%26hashArgs%3D%2523%26isauthcode%3Dtrue%26oauthStart%3D1776091532558%26state%3DhashArgsFromTB_eu-north-1_d16931079b9a367e&forceMobileLayout=0&forceMobileApp=0&code_challenge=jiWqOToZEEPvScrd2Eqk9STGF4qyNxIQGYJ_gaCuy4I&code_challenge_method=SHA-256
-
 **AWS Console** [Go to link to download relevant Docker Desktop for your specific OS system]
 
 
@@ -49,7 +47,7 @@ For full dependency versions see → [requirements.md](https://github.com/Drook9
 
 ### Set-up & Troubleshooting
 The links below point to sub-folders for all the tools used throughout this project. The links point to the set-up and troubleshooting faced. To check versions required please refer to the requirements.md file listed above.
-Please ensure you 
+Please ensure you have finished the full prerequisites stated above and have installed all version dependencies before proceeding.
 
 ---
 
