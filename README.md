@@ -30,6 +30,9 @@ This project handles sensitive credentials (database passwords, API keys, AWS ac
 > ### 📄 [Security Setup Guide →](./Documents/SECURITY_SETUP.md)
 
 ---
+## Requirements
+For full dependency versions see → [requirements.md](./Documents/requirements.md)
+
 
 
 ### Set-up & Troubleshooting
@@ -78,3 +81,6 @@ The links below point to sub-folders for all the tools used in this project. The
 | Secrets Manager                      | ✅ |
 
 </div>
+
+
+
