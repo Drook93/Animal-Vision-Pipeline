@@ -31,7 +31,7 @@ This project handles sensitive credentials (database passwords, API keys, AWS ac
 
 ---
 ## Requirements
-For full dependency versions see → [requirements.md](./Documents/requirements.md)
+For full dependency versions see → [requirements.md](https://github.com/Drook93/Animal-Vision-Pipeline/blob/main/requirements.md)
 
 
 
