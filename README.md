@@ -1,4 +1,4 @@
-<a href="https://github.com/Drook93/Global-Video-Game-Sales">
+<a href="https://github.com/Drook93/Animal-Vision-Pipeline">
   <img src="https://github.com/Drook93/Animal-Vision-Pipeline/blob/main/Documents/images/ANIMAL%20VISION%20PIPELINE.png" 
        width="100%" 
        height="1000px" />
@@ -28,7 +28,7 @@ In order to
 
 
 
-## 🔐 Security & Secrets Management
+##  Security & Secrets Management
 
 This project handles sensitive credentials (database passwords, API keys, AWS access) safely — no secrets are hardcoded or committed to this repository.
 
@@ -39,7 +39,7 @@ This project handles sensitive credentials (database passwords, API keys, AWS ac
 - ✅ **GitHub Actions Secrets** — used for CI/CD, never inline in YAML
 
 > For full setup instructions, IAM policy examples, and a security checklist, see the:
-> ### 📄 [Security Setup Guide →](./Documents/SECURITY_SETUP.md)
+> ###  [Security Setup Guide →](./Documents/SECURITY_SETUP.md)
 
 ---
 ## Requirements
@@ -77,11 +77,18 @@ Please ensure you
 
 ---
 
+### A Directed Acyclic Graph (DAG) is a model used in data engineering and computer science to schedule, organize, and execute workflows by defining the specific order and dependencies of tasks. 
 <img src="https://github.com/Drook93/Animal-Vision-Pipeline/blob/main/Documents/images/DAG/Directed-Acyclic-Graph.png" width="300"/>
+
+
 
 | DAG Files          | Set-up & Troubleshooting |
 | ------------------ | ------------------------ |
-| REST API Ingestion | ✅ |
+| Data Ingestion DAG | ✅ |
+| Cleaning & Validation DAG | ✅ |
+| Feature Engineering DAG | ✅ |
+| Training & Evaluation DAG | ✅ |
+| Model Serving DAG | ✅ |
 
 ---
 
@@ -97,10 +104,19 @@ Please ensure you
 
 | Prometheus                           | Set-up & Troubleshooting |
 | ------------------------------------ | ------------------------ |
-| Amazon S3 (Data-lake)                | ✅ |
-| Identity and Access Management (IAM) | ✅ |
-| Secrets Manager                      | ✅ |
+| Prometheus Server                    | ✅ |
+| PostgreSQL Exporter                  | ✅ |
+| Node Exporter (CPU, RAM, Disk)       | ✅ |
+| Alertmanager                         | ✅ |
 
+<img src="https://github.com/Drook93/Animal-Vision-Pipeline/blob/main/Documents/images/grafana/grafana_logo.png" width="200"/>
+
+| Grafana                           | Set-up & Troubleshooting |
+| ------------------------------------ | ------------------------ |
+| Prometheus Server                    | ✅ |
+| PostgreSQL Exporter                  | ✅ |
+| Node Exporter (CPU,RAM, Disk)        | ✅ |
+| Alertmanager                         | ✅ |
 
 
 <img src="https://github.com/Drook93/Animal-Vision-Pipeline/blob/main/Documents/images/mlflow/mlflow_logo.webp" width="150"/>
