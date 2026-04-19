@@ -31,10 +31,10 @@ In order to
 This project handles sensitive credentials (database passwords, API keys, AWS access) safely — no secrets are hardcoded or committed to this repository.
 
 **Key practices used:**
- **AWS Secrets Manager** — all credentials stored and retrieved at runtime
- **IAM Least-Privilege Policies** — each service only accesses what it needs
- **`.env` never committed** — git-ignored for local development
-**GitHub Actions Secrets** — used for CI/CD, never inline in YAML
+- **AWS Secrets Manager** — all credentials stored and retrieved at runtime
+- **IAM Least-Privilege Policies** — each service only accesses what it needs
+- **`.env` never committed** — git-ignored for local development
+- **GitHub Actions Secrets** — used for CI/CD, never inline in YAML
 
 > For full setup instructions, IAM policy examples, and a security checklist, see the:
 > ###  [Security Setup Guide →](./Documents/SECURITY_SETUP.md)
