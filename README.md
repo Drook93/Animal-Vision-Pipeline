@@ -31,10 +31,10 @@ In order to
 This project handles sensitive credentials (database passwords, API keys, AWS access) safely — no secrets are hardcoded or committed to this repository.
 
 **Key practices used:**
-- 🔑 **AWS Secrets Manager** — all credentials stored and retrieved at runtime
-- 🛡️ **IAM Least-Privilege Policies** — each service only accesses what it needs
-- 🚫 **`.env` never committed** — git-ignored for local development
-- ✅ **GitHub Actions Secrets** — used for CI/CD, never inline in YAML
+ **AWS Secrets Manager** — all credentials stored and retrieved at runtime
+ **IAM Least-Privilege Policies** — each service only accesses what it needs
+ **`.env` never committed** — git-ignored for local development
+**GitHub Actions Secrets** — used for CI/CD, never inline in YAML
 
 > For full setup instructions, IAM policy examples, and a security checklist, see the:
 > ###  [Security Setup Guide →](./Documents/SECURITY_SETUP.md)
@@ -58,12 +58,12 @@ Please ensure you have finished the full prerequisites stated above and have ins
 
 | Docker (Containerisation) | Set-up & Troubleshooting |
 | ------------------------- | ------------------------ |
-| PostgreSQL                | ✅ |
-| Redis                     | ✅ |
-| Scheduler                 | ✅ |
-| DAG Processor             | ✅ |
-| Airflow Webserver         | ✅ |
-| Worker                    | ✅ |
+| PostgreSQL                |  |
+| Redis                     |  |
+| Scheduler                 |  |
+| DAG Processor             |  |
+| Airflow Webserver         |  |
+| Worker                    |  |
 
 ---
 
@@ -71,7 +71,7 @@ Please ensure you have finished the full prerequisites stated above and have ins
 
 | Apache Airflow | Set-up & Troubleshooting |
 | -------------- | ------------------------ |
-| PostgreSQL     | ✅ |
+| PostgreSQL     |  |
 
 ---
 
@@ -82,11 +82,11 @@ Please ensure you have finished the full prerequisites stated above and have ins
 
 | DAG Files          | Set-up & Troubleshooting |
 | ------------------ | ------------------------ |
-| Data Ingestion DAG | ✅ |
-| Cleaning & Validation DAG | ✅ |
-| Feature Engineering DAG | ✅ |
-| Training & Evaluation DAG | ✅ |
-| Model Serving DAG | ✅ |
+| Data Ingestion DAG |  |
+| Cleaning & Validation DAG |  |
+| Feature Engineering DAG |  |
+| Training & Evaluation DAG |  |
+| Model Serving DAG |  |
 
 ---
 
@@ -94,15 +94,15 @@ Please ensure you have finished the full prerequisites stated above and have ins
 
 | Amazon Web Services                  | Set-up & Troubleshooting |
 | ------------------------------------ | ------------------------ |
-| Amazon S3 (Data-lake)                | ✅ |
-| Identity and Access Management (IAM) | ✅ |
-| Secrets Manager                      | ✅ |
+| Amazon S3 (Data-lake)                |  |
+| Identity and Access Management (IAM) |  |
+| Secrets Manager                      |  |
 
 <img src="https://github.com/Drook93/Animal-Vision-Pipeline/blob/main/Documents/images/prometheus/prometheus_logo.png" width="200"/>
 
 | Prometheus                           | Set-up & Troubleshooting |
 | ------------------------------------ | ------------------------ |
-| Prometheus Server                    | ✅ |
+| Prometheus Server                    |  |
 | PostgreSQL Exporter                  | ✅ |
 | Node Exporter (CPU, RAM, Disk)       | ✅ |
 | Alertmanager                         | ✅ |
