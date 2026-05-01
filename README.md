@@ -65,6 +65,71 @@ Please ensure you have finished the full prerequisites stated above and have ins
 | Airflow Webserver         |  |
 | Worker                    |  |
 
+## Start the application
+**Ensure you're docker descktop is open and active before running these commands in the terminal.**
+
+Replace the placeholder "your_docker_name_here.yml" with your files name.
+Run the following command:
+It reads your docker-compose.yml file, downloads the images, creates the containers, and starts them all at once and hides
+
+```bash
+docker compose -f your_docker_name_here.yml up -d
+```
+This stops all running containers for the application and removes them with any networks created.
+```bash
+docker compose -f your_docker_name_here.yml down -d
+```
+```bash
+docker compose -f your_docker_name_here.yml stop
+```
+```bash
+docker compose -f your_docker_name_here.yml restart <service>
+```
+
+```bash
+docker compose -f your_docker_name_here.yml logs -f
+```
+
+```bash
+docker compose -f your_docker_name_here.yml ps
+```
+
+```bash
+docker compose -f your_docker_name_here.yml build
+```
+
+```bash
+docker compose -f your_docker_name_here.yml exec <service> sh
+```
+
+```bash
+docker compose -f your_docker_name_here.yml exec <service> sh
+```
+
+```bash
+docker compose -f your_docker_name_here.yml stats
+```
+Network debugging inside service containers. Use Nicolaka/netwshooting to troubleshoot inside service containers. Ensure you have **"--rm"** otherwise the container stays on your disk if you exit the terminal. If you don't include **""--it""** as "i" allows for you to type commands and "t" gives you a text interface that looks like a real terminal
+
+```bash
+docker run --rm --it --network container:<worker_name> nicolaka/netshoot
+```
+To check DNS:
+```bash
+dig api-service-name
+```
+To check open ports:
+```bash
+nmap api-service-name
+```
+To see live traffic (Packet Sniffing):
+```bash
+tcpdump -i eth0
+```
+To test the API connection:
+```bash
+curl -v http://api-service-name:8080/health
+```
 ---
 
 <img src="https://github.com/Drook93/Animal-Vision-Pipeline/blob/main/Documents/images/airflow/AirflowLogo.svg" width="200"/>
